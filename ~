@@ -1,0 +1,23 @@
+Refactor: Remove paintTile() and call paintRectangle()
+
+Refactor: Remove paintTile() and call paintRectangle() directly, as
+previously, paintTile() was simply passing a direct call to a
+rectangle() function, which only served to increase dev confusion
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Wed Oct 7 02:17:19 2026 -0700
+#
+# interactive rebase in progress; onto 5801111
+# Last commands done (7 commands done):
+#    reword ffb0fe8 # Reworded Dead Enemies Comment
+#    reword 3e836ba # Removed Stacked Functions
+# Next commands to do (2 remaining commands):
+#    reword 93f1471 # Refactor: Merged layouts position and color arrays
+#    reword 4bcfd9b # Refactor: Removed sunsetted shadows option
+# You are currently editing a commit while rebasing branch 'main' on '5801111'.
+#
+# Changes to be committed:
+#	modified:   c-puzzle-renderer.html
+#
