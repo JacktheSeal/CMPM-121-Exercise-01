@@ -29,10 +29,7 @@
 
     function update() {
 
-      let item = presetCollection[0];
-      for (let i = 0; i < presetCollection.length; i++) {
-        if (i === currentIndex) item = presetCollection[i];
-      }
+      let item = presetCollection[currentIndex];
       label.textContent = item.name;
       swatch.style.backgroundColor = item.color;
 
