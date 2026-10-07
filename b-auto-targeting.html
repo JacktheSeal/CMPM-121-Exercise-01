@@ -45,11 +45,16 @@
         {
           continue;
         }
-        // Keep the earliest enemy if two have equal health.
-          if (target && target.health > enemy.health) {
-          continue;
-          }
+        // Places first viable enemy inside of target
+        if (!target) 
+        {
           target = enemy;
+        }
+        // Keep the latest enemy if two have equal health.
+        if (target && target.health <= enemy.health) 
+        {
+          target = enemy
+        }
       }
       return target;
     }
